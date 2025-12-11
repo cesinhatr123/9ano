@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>César Teixeira Rodrigues - Portfólio Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Página Principal -->
+    <div id="main-page">
+        <header>
+            <img src="Eu.jpeg" alt="Foto de Perfil" class="profile-photo">
+
+            <h1>César Teixeira Rodrigues</h1>
+            <p class="title">Mestrando em Ensino de Física (UECE) • Professor da Educação Básica</p>
+
+            <div class="contact-info">
+                <p>✉️ cesinha.rodrigues@aluno.uece.br</p>
+                <p>📍 Iguatu, Ceará – Brasil</p>
+                <p>📅 Idade: 34 anos</p>
+                <p>🔗 Hobbies: Ler Sci-Fi, Jogar, Filmes/Série</p>
+            </div>
+
+            <p class="about-text">
+                Graduado em Licenciatura em Física pela Universidade Federal de Campina Grande (UFCG). 
+                Atualmente, é mestrando em Ensino de Física pelo Mestrado Nacional Profissional em Ensino de Física 
+                (MNPEF) da Universidade Federal do Ceará (UECE). Possui experiência em projetos de extensão, 
+                tendo integrado o DROPS de Física e o projeto BINGO. Atuou também no Programa Institucional de 
+                Bolsas de Iniciação à Docência (PIBID) e no Programa Residência Pedagógica, fortalecendo sua 
+                formação docente e prática educativa.
+            </p>
+
+            <!-- Links com ícones -->
+            <div class="links">
+                <a href="https://abre.ai/ofgm" target="_blank">
+                    <i class="fas fa-graduation-cap"></i> Currículo Lattes
+                </a>
+                <a href="https://github.com/cesinhatr123" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.instagram.com/_cesartr/" target="_blank"> <!-- coloque seu usuário real aqui -->
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="#" onclick="showExtra()">
+                    <i class="fas fa-folder-open"></i> Portfólio
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Página Extra -->
+    <div id="extra-page">
+        <h1>Projetos & Atividades</h1>
+        <p class="about-text">
+            Aqui você encontra alguns dos projetos desenvolvidos na disciplina Atividades Computacionais 
+            para o Ensino de Física e Fundamental, ministrada pela Profa. Dra. Lázara Silveira Castrillo.
+        </p>
+
+        <div class="links">
+            <a href="https://calculadoraaven.netlify.app" target="_blank">
+                <i class="fas fa-calculator"></i> Calculadora
+            </a>
+            <a href="https://abre.ai/offP" target="_blank">
+                <i class="fas fa-file-excel"></i> Excel
+            </a>
+            <a href="https://projetoescolafrei.netlify.app/" target="_blank">
+                <i class="fas fa-school"></i> Projeto/Escola
+            </a>
+        </div>
+
+        <a href="#" class="back-btn" onclick="showMain()">← Voltar à página inicial</a>
+    </div>
+
+</div>
+
+<script>
+    function showExtra() {
+        document.getElementById('main-page').classList.add('hidden');
+        document.getElementById('extra-page').classList.add('active');
+    }
+    function showMain() {
+        document.getElementById('extra-page').classList.remove('active');
+        document.getElementById('main-page').classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>             
